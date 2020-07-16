@@ -21,8 +21,8 @@
 
             <ActivityIndicator x:Name="activitySpinner" Color="Red" IsRunning="True"/>
 
-            <Label x:Name="labelName" Text="Username"/>
-            <Entry x:Name="entryName" Placeholder="Username"/>
+            <Label x:Name="labelName" Text="Number"/>
+            <Entry x:Name="entryNumber" Keyboard="Telephone" Placeholder="Number"/>
             <Label x:Name="labelPassoword" Text="Password"/>
             <Entry x:Name="entryPassword" Placeholder="Password"/>
             <Button x:Name="signInButton" Text="Sign in" Clicked="SignInProcedure"/>

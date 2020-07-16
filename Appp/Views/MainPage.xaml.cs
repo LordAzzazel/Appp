@@ -15,12 +15,8 @@ namespace Appp.Views
         public MainPage()
         {
             InitializeComponent();
-            Init();
         }
 
-        private void Init()
-        {
 
-        }
     }
 }

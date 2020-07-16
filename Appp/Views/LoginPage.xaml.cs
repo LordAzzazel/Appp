@@ -26,12 +26,12 @@ namespace Appp.Views
             activitySpinner.IsVisible = false;
             LoginIcon.HeightRequest = Constants.loginIconHeight;
 
-            entryName.Completed += (s, e) => entryPassword.Focus();
+            entryNumber.Completed += (s, e) => entryPassword.Focus();
             entryPassword.Completed += (s, e) => SignInProcedure(s, e);
         }
         private void SignInProcedure(object sender, EventArgs e)
         {
-            User user = new User(entryName.Text, entryPassword.Text);
+            User user = new User(entryNumber.Text, entryPassword.Text);
             if (user.CheckInformation())
             {
                 DisplayAlert("Login", "Login Success", "OK");
