@@ -1,11 +1,18 @@
 ﻿using Appp.Models;
 using System;
+using Json.Net;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
+using System.Net.Http;
 using System.Text;
+using System.Diagnostics;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using System.Net.Http.Headers;
+using Newtonsoft.Json;
+using System.Dynamic;
 
 namespace Appp.Views
 {
@@ -25,22 +32,46 @@ namespace Appp.Views
             labelPassoword.TextColor = Constants.mainTextColor;
             activitySpinner.IsVisible = false;
             LoginIcon.HeightRequest = Constants.loginIconHeight;
-
+            entryNumber.Text = "+7 (911) 447-11-83";
+            entryPassword.Text = "x5410041";
             entryNumber.Completed += (s, e) => entryPassword.Focus();
             entryPassword.Completed += (s, e) => SignInProcedure(s, e);
         }
-        private void SignInProcedure(object sender, EventArgs e)
+        private async void SignInProcedure(object sender, EventArgs e)
         {
-            User user = new User(entryNumber.Text, entryPassword.Text);
-            if (user.CheckInformation())
+            var number = entryNumber.Text;
+            var password = entryPassword.Text;
+            if (string.IsNullOrEmpty(number) && string.IsNullOrEmpty(password))
             {
-                DisplayAlert("Login", "Login Success", "OK");
+                await DisplayAlert("Login", "Login Not Correct", "Ok");
+                return;
             }
-            else
+            using ( var client = new HttpClient())
             {
-                DisplayAlert("Login", "Login Not Correct, empty username or password", "OK");
+                var apiLogin = "http://cabinets.itmit-studio.ru/api/login";
+                var data = "{\"phone\" : \"" + number + "\", \"password\" : \"" + password + "\"}";
+
+                var contentRequest = new StringContent(data, Encoding.UTF8, "application/json");
+
+                var responce = await client.PostAsync(apiLogin, contentRequest);
+
+                if (responce.StatusCode == System.Net.HttpStatusCode.OK)
+                {
+                    HttpContent content = responce.Content;
+                    var jsonString = await content.ReadAsStringAsync();
+
+                    dynamic dynObject = JsonConvert.DeserializeObject(jsonString);
+                    Debug.Write(jsonString);
+
+                    await DisplayAlert("Login", "Login Successful", "Ok");
+                    await Navigation.PushAsync(new HomePage());
+                }
+                else
+                {
+                    await DisplayAlert("Login", "Login Failed", "Ok");
+                    return;
+                }
             }
         }
-
     }
 }

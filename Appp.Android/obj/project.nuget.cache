@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "up5uLAatvZH6VDEoNe5ASe35FQ+aD3yw2PYgQd0/jc1GzACCEnDzCJHV/97iGBtBfO1pzjaOML/4LugaUBHtXA==",
+  "dgSpecHash": "fVGfoIXV7+JxQqrEVakaprIGHi/aZLTj/YXXZCoBvaOQnmhw/LcpntDX9JR70KaLaJjz3fbXKpWdgmYdIDdjsA==",
   "success": true,
   "projectFilePath": "C:\\Users\\lebed\\source\\repos\\Appp\\Appp.Android\\Appp.Android.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\lebed\\.nuget\\packages\\json.net\\1.0.23\\json.net.1.0.23.nupkg.sha512",
+    "C:\\Users\\lebed\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
     "C:\\Users\\lebed\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.android.arch.core.common\\1.1.1.3\\xamarin.android.arch.core.common.1.1.1.3.nupkg.sha512",
     "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.android.arch.core.runtime\\1.1.1.3\\xamarin.android.arch.core.runtime.1.1.1.3.nupkg.sha512",

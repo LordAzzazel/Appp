@@ -493,3 +493,5 @@ C:\Users\lebed\source\repos\Appp\Appp.Android\obj\Debug\90\res\mipmap-mdpi\news.
 C:\Users\lebed\source\repos\Appp\Appp.Android\obj\Debug\90\res\mipmap-xhdpi\news.png
 C:\Users\lebed\source\repos\Appp\Appp.Android\obj\Debug\90\res\mipmap-xxhdpi\news.png
 C:\Users\lebed\source\repos\Appp\Appp.Android\obj\Debug\90\res\mipmap-xxxhdpi\news.png
+C:\Users\lebed\source\repos\Appp\Appp.Android\obj\Debug\90\android\assets\Json.Net.dll
+C:\Users\lebed\source\repos\Appp\Appp.Android\obj\Debug\90\android\assets\Newtonsoft.Json.dll
