@@ -13,6 +13,7 @@ using Xamarin.Forms.Xaml;
 using System.Net.Http.Headers;
 using Newtonsoft.Json;
 using System.Dynamic;
+using Newtonsoft.Json.Linq;
 
 namespace Appp.Views
 {
@@ -58,13 +59,22 @@ namespace Appp.Views
                 if (responce.StatusCode == System.Net.HttpStatusCode.OK)
                 {
                     HttpContent content = responce.Content;
-                    var jsonString = await content.ReadAsStringAsync();
-
-                    dynamic dynObject = JsonConvert.DeserializeObject(jsonString);
+                    string jsonString = await content.ReadAsStringAsync();
+                    var x = JObject.Parse(jsonString);
+                    var token = x["data"]["access_token"];
+                    var name = x["data"]["client"]["name"];
+                    var birthday = x["data"]["client"]["birthday"];
+                    var phone = x["data"]["client"]["phone"];
+                    var email = x["data"]["client"]["email"];
+                    Application.Current.Properties["token"] = token;
+                    Application.Current.Properties["name"] = name;
+                    Application.Current.Properties["birthday"] = birthday;
+                    Application.Current.Properties["phone"] = phone;
+                    Application.Current.Properties["email"] = email;
+                    await Application.Current.SavePropertiesAsync();
                     Debug.Write(jsonString);
 
-                    await DisplayAlert("Login", "Login Successful", "Ok");
-                    await Navigation.PushAsync(new HomePage());
+                    App.Current.MainPage = new MainPage();
                 }
                 else
                 {

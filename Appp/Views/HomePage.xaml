@@ -8,9 +8,9 @@
              x:Class="Appp.Views.HomePage">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="1"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Button Clicked="Button_Clicked">
+
+            </Button>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

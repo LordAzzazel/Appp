@@ -11,7 +11,7 @@ namespace Appp
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new MainPage());
+            MainPage = new LoginPage();
         }
 
         protected override void OnStart()
