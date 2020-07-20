@@ -21,7 +21,8 @@ namespace Appp.Views
         {
             InitializeComponent();
             BindingContext = new NewsViewModel();
-
+/*                                            < Label Grid.Column = "1" Grid.Row = "1" Text = "{Binding body}" ></ Label >
+*/
         }
 
     }

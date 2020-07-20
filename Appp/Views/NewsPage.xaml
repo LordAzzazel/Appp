@@ -3,12 +3,16 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:local="clr-namespace:Appp"
              Title="News"
              mc:Ignorable="d"
              x:Class="Appp.Views.NewsPage">
+    <ContentPage.BindingContext>
+        <local:NewsViewModel></local:NewsViewModel>
+    </ContentPage.BindingContext>
     <ContentPage.Content>
         <StackLayout>
-            <ListView ItemsSource="{Binding PostsList}" HasUnevenRows="True">
+            <ListView ItemsSource="{Binding PostsList}" HasUnevenRows="true">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
@@ -21,9 +25,8 @@
                                     <ColumnDefinition Width="Auto"></ColumnDefinition>
                                     <ColumnDefinition Width="*"></ColumnDefinition>
                                 </Grid.ColumnDefinitions>
-                                <Label Grid.ColumnSpan="2" HeightRequest="60" WidthRequest="60" Text="{Binding preview_picture}"></Label>
+                                <Image Grid.ColumnSpan="1" HeightRequest="70" WidthRequest="70" Source="{Binding preview_picture, StringFormat='http://cabinets.itmit-studio.ru/{0:F0}'}"></Image>
                                 <Label Grid.Column="1" Text="{Binding head}" FontAttributes="Bold" Grid.Row="0"></Label>
-                                <Label Grid.Column="1" Grid.Row="1" Text="{Binding body}"></Label>
                             </Grid>
                         </ViewCell>
                     </DataTemplate>
