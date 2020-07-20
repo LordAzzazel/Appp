@@ -16,20 +16,20 @@ namespace Appp.Views
         public HomePage()
         {
             InitializeComponent();
+            Init();
+            
         }
 
-        private void Button_Clicked(object sender, EventArgs e)
-        {
-            var token = Application.Current.Properties["token"].ToString();
+        private void Init() {
             var name = Application.Current.Properties["name"].ToString();
             var birthday = Application.Current.Properties["birthday"].ToString();
             var phone = Application.Current.Properties["phone"].ToString();
             var email = Application.Current.Properties["email"].ToString();
-            Debug.Write(token);
-            Debug.Write(name);
-            Debug.Write(birthday);
-            Debug.Write(phone);
-            Debug.Write(email);
+            Name.Text += name;
+            Birthday.Text += birthday;
+            Phone.Text += phone;
+            Email.Text += email;
         }
+
     }
 }

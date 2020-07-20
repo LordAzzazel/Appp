@@ -16,5 +16,9 @@ namespace Appp.Views
         {
             InitializeComponent();
         }
+        public void Click(object sender, EventArgs e)
+        {
+            App.Current.MainPage = new LoginPage();
+        }
     }
 }
