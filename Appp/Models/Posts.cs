@@ -1,6 +1,7 @@
 ﻿using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Text;
 
 namespace Appp.Models
@@ -11,7 +12,7 @@ namespace Appp.Models
         public bool Success { get; set; }
 
         [JsonProperty("data")]
-        public List<Posts> Data { get; set; }
+        public ObservableCollection<Posts> Data { get; set; }
 
         [JsonProperty("message")]
         public string Message { get; set; }

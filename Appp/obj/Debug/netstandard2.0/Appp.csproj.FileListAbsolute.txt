@@ -16,3 +16,4 @@ C:\Users\lebed\source\repos\Appp\Appp\obj\Debug\netstandard2.0\Appp.dll
 C:\Users\lebed\source\repos\Appp\Appp\obj\Debug\netstandard2.0\ref\Appp.dll
 C:\Users\lebed\source\repos\Appp\Appp\obj\Debug\netstandard2.0\Appp.pdb
 C:\Users\lebed\source\repos\Appp\Appp\obj\Debug\netstandard2.0\Appp.csprojAssemblyReference.cache
+C:\Users\lebed\source\repos\Appp\Appp\obj\Debug\netstandard2.0\Views\MyListPageDetail.xaml.g.cs

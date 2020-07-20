@@ -8,7 +8,7 @@
              x:Class="Appp.Views.HomePage">
 
     <StackLayout>
-        <StackLayout HorizontalOptions="Center" VerticalOptions="Start" Padding="0,20,0,0" Margin="10">
+        <StackLayout HorizontalOptions="Center" Spacing="10" VerticalOptions="Start" Padding="0,20,0,0" Margin="10">
             <Image x:Name="circleImg" Source="beverages.png"  ></Image>
             <StackLayout HorizontalOptions="Start" VerticalOptions="Start" Padding="20,20,20,20" Margin="10" Spacing="10">
                 <Label x:Name="Name" Text="Name: " FontSize="24"></Label>

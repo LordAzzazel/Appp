@@ -15,8 +15,8 @@ namespace Appp
 {
     public class NewsViewModel : INotifyPropertyChanged
     {
-        private List<Posts> postsList { get; set; }
-        public List<Posts> PostsList
+        private ObservableCollection<Posts> postsList { get; set; }
+        public ObservableCollection<Posts> PostsList
         {
             get
             {

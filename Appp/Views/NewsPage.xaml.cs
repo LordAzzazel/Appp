@@ -21,9 +21,21 @@ namespace Appp.Views
         {
             InitializeComponent();
             BindingContext = new NewsViewModel();
-/*                                            < Label Grid.Column = "1" Grid.Row = "1" Text = "{Binding body}" ></ Label >
-*/
         }
 
+        private async void OnItemSelected(object sender, ItemTappedEventArgs e)
+        {
+            
+            var mydetails = e.Item as Posts;
+            await Navigation.PushAsync(new MyListPageDetail(mydetails.head, mydetails.body, mydetails.preview_picture));
+        }
+        private void Cell_OnTapped(object sender, EventArgs e)
+        {
+            var viewCell = (ViewCell)sender;
+            if (viewCell.View != null)
+            {
+                viewCell.View.BackgroundColor = Constants.backgroundColor;
+            }
+        }
     }
 }
