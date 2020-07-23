@@ -1,11 +1,3 @@
-C:\Users\lebed\source\repos\Appp\Appp.iOS\obj\iPhone\Debug\ibtool\_BundleResourceWithLogicalName.items
-C:\Users\lebed\source\repos\Appp\Appp.iOS\obj\iPhone\Debug\actool\_PartialAppManifest.items
-C:\Users\lebed\source\repos\Appp\Appp.iOS\obj\iPhone\Debug\actool\_BundleResourceWithLogicalName.items
-C:\Users\lebed\source\repos\Appp\Appp.iOS\obj\iPhone\Debug\coremlc\_PartialAppManifest.items
-C:\Users\lebed\source\repos\Appp\Appp.iOS\obj\iPhone\Debug\coremlc\_BundleResourceWithLogicalName.items
-C:\Users\lebed\source\repos\Appp\Appp.iOS\obj\iPhone\Debug\optimized\
-C:\Users\lebed\source\repos\Appp\Appp.iOS\obj\iPhone\Debug\Appp.iOS.csprojAssemblyReference.cache
-C:\Users\lebed\source\repos\Appp\Appp.iOS\obj\iPhone\Debug\Appp.iOS.csproj.CoreCompileInputs.cache
 C:\Users\lebed\source\repos\Appp\Appp.iOS\bin\iPhone\Debug\Appp.iOS.exe
 C:\Users\lebed\source\repos\Appp\Appp.iOS\bin\iPhone\Debug\Appp.iOS.pdb
 C:\Users\lebed\source\repos\Appp\Appp.iOS\bin\iPhone\Debug\Json.Net.dll
@@ -55,6 +47,14 @@ C:\Users\lebed\source\repos\Appp\Appp.iOS\bin\iPhone\Debug\Appp.dll
 C:\Users\lebed\source\repos\Appp\Appp.iOS\bin\iPhone\Debug\Xamarin.Forms.Platform.iOS.dll
 C:\Users\lebed\source\repos\Appp\Appp.iOS\bin\iPhone\Debug\Appp.pdb
 C:\Users\lebed\source\repos\Appp\Appp.iOS\bin\iPhone\Debug\Xamarin.Forms.Platform.iOS.pdb
+C:\Users\lebed\source\repos\Appp\Appp.iOS\obj\iPhone\Debug\ibtool\_BundleResourceWithLogicalName.items
+C:\Users\lebed\source\repos\Appp\Appp.iOS\obj\iPhone\Debug\actool\_PartialAppManifest.items
+C:\Users\lebed\source\repos\Appp\Appp.iOS\obj\iPhone\Debug\actool\_BundleResourceWithLogicalName.items
+C:\Users\lebed\source\repos\Appp\Appp.iOS\obj\iPhone\Debug\coremlc\_PartialAppManifest.items
+C:\Users\lebed\source\repos\Appp\Appp.iOS\obj\iPhone\Debug\coremlc\_BundleResourceWithLogicalName.items
+C:\Users\lebed\source\repos\Appp\Appp.iOS\obj\iPhone\Debug\optimized\
+C:\Users\lebed\source\repos\Appp\Appp.iOS\obj\iPhone\Debug\Appp.iOS.csprojAssemblyReference.cache
+C:\Users\lebed\source\repos\Appp\Appp.iOS\obj\iPhone\Debug\Appp.iOS.csproj.CoreCompileInputs.cache
 C:\Users\lebed\source\repos\Appp\Appp.iOS\obj\iPhone\Debug\XamlC.stamp
 C:\Users\lebed\source\repos\Appp\Appp.iOS\obj\iPhone\Debug\Appp.iOS.csproj.CopyComplete
 C:\Users\lebed\source\repos\Appp\Appp.iOS\obj\iPhone\Debug\Appp.iOS.exe

@@ -33,8 +33,8 @@ namespace Appp.Views
         {
             var viewCell = (ViewCell)sender;
             if (viewCell.View != null)
-            {
-                viewCell.View.BackgroundColor = Constants.backgroundColor;
+            {;
+                viewCell.View.BackgroundColor = Color.White;
             }
         }
     }
