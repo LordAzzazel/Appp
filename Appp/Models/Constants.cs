@@ -14,5 +14,8 @@ namespace Appp.Models
 
 
         public static int loginIconHeight = 120;
+
+        public static string AuthUrl = "mandatory-granite-shirt.us1a.cloud.realm.io"; // <- update this
+        public static string RealmPath = "ToDo";
     }
 }

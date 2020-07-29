@@ -14,6 +14,7 @@ using System.Net.Http.Headers;
 using Newtonsoft.Json;
 using System.Dynamic;
 using Newtonsoft.Json.Linq;
+using Realms;
 
 namespace Appp.Views
 {
@@ -61,20 +62,24 @@ namespace Appp.Views
                     HttpContent content = responce.Content;
                     string jsonString = await content.ReadAsStringAsync();
                     var x = JObject.Parse(jsonString);
+                    UserRepository ur = new UserRepository();
                     var token = x["data"]["access_token"];
+                    var realm = Realm.GetInstance();
                     var name = x["data"]["client"]["name"];
                     var birthday = x["data"]["client"]["birthday"];
                     var phone = x["data"]["client"]["phone"];
                     var email = x["data"]["client"]["email"];
-                    Application.Current.Properties["token"] = token;
-                    Application.Current.Properties["name"] = name;
-                    Application.Current.Properties["birthday"] = birthday;
-                    Application.Current.Properties["phone"] = phone;
-                    Application.Current.Properties["email"] = email;
-                    await Application.Current.SavePropertiesAsync();
-                    Debug.Write(jsonString);
+                    Item a = new Item { access_key = token.ToString(),/* name = name.ToString(), birthday = birthday.ToString(), phone = phone.ToString(), email = email.ToString()*/ };
+                    ur.Add(a);
+                    var tok = realm.All<RealmItem>().ToList();
+                    /*                    var combined = string.Join(", ", tok);
+                    */
+                    Console.WriteLine(tok);
+
+
 
                     App.Current.MainPage = new MainPage();
+
                 }
                 else
                 {

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Appp.ViewModels;
+using System;
 
 using System.Diagnostics;
 using System.Linq;
@@ -17,18 +18,19 @@ namespace Appp.Views
         {
             InitializeComponent();
             Init();
-            
+            BindingContext = new HomePageViewModel();
+
         }
 
         private void Init() {
-            var name = Application.Current.Properties["name"].ToString();
+            /*var name = Application.Current.Properties["name"].ToString();
             var birthday = Application.Current.Properties["birthday"].ToString();
             var phone = Application.Current.Properties["phone"].ToString();
             var email = Application.Current.Properties["email"].ToString();
             Name.Text += name;
             Birthday.Text += birthday;
             Phone.Text += phone;
-            Email.Text += email;
+            Email.Text += email;*/
         }
 
     }

@@ -7,7 +7,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Appp.Android", "Appp.Androi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Appp.iOS", "Appp.iOS\Appp.iOS.csproj", "{FB56A2AF-EB3E-47B5-B0BB-E41E2AE6C8E1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Appp", "Appp\Appp.csproj", "{447EEA45-6BD6-45B8-8DB6-4ABFFE9CA5C8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Appp", "Appp\Appp.csproj", "{447EEA45-6BD6-45B8-8DB6-4ABFFE9CA5C8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D7489C5C-8DC8-4DE3-976A-15625CFD979C}"
+	ProjectSection(SolutionItems) = preProject
+		FodyWeavers.xml = FodyWeavers.xml
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

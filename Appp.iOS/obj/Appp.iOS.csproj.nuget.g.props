@@ -14,5 +14,7 @@
   </PropertyGroup>
   <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <Import Project="C:\Microsoft\Xamarin\NuGet\xamarin.forms\4.5.0.495\build\Xamarin.Forms.props" Condition="Exists('C:\Microsoft\Xamarin\NuGet\xamarin.forms\4.5.0.495\build\Xamarin.Forms.props')" />
+    <Import Project="$(NuGetPackageRoot)realm.fody\4.3.0\build\Realm.Fody.props" Condition="Exists('$(NuGetPackageRoot)realm.fody\4.3.0\build\Realm.Fody.props')" />
+    <Import Project="$(NuGetPackageRoot)realm\4.3.0\build\Realm.props" Condition="Exists('$(NuGetPackageRoot)realm\4.3.0\build\Realm.props')" />
   </ImportGroup>
 </Project>

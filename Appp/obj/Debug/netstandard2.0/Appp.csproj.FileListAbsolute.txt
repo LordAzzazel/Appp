@@ -11,8 +11,7 @@ C:\Users\lebed\source\repos\Appp\Appp\obj\Debug\netstandard2.0\Views\NewsPage.xa
 C:\Users\lebed\source\repos\Appp\Appp\obj\Debug\netstandard2.0\Views\SettingsPage.xaml.g.cs
 C:\Users\lebed\source\repos\Appp\Appp\obj\Debug\netstandard2.0\Appp.AssemblyInfoInputs.cache
 C:\Users\lebed\source\repos\Appp\Appp\obj\Debug\netstandard2.0\Appp.AssemblyInfo.cs
-C:\Users\lebed\source\repos\Appp\Appp\obj\Debug\netstandard2.0\Appp.csproj.CoreCompileInputs.cache
-C:\Users\lebed\source\repos\Appp\Appp\obj\Debug\netstandard2.0\XamlC.stamp
 C:\Users\lebed\source\repos\Appp\Appp\obj\Debug\netstandard2.0\Appp.dll
 C:\Users\lebed\source\repos\Appp\Appp\obj\Debug\netstandard2.0\ref\Appp.dll
 C:\Users\lebed\source\repos\Appp\Appp\obj\Debug\netstandard2.0\Appp.pdb
+C:\Users\lebed\source\repos\Appp\Appp\obj\Debug\netstandard2.0\Appp.csprojAssemblyReference.cache
